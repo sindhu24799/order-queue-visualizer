@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Queue Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🛒 Shopify Order Queue</h1>
+    <div class="controls">
+      <button onclick="addOrder('VIP')">Add VIP 🔴</button>
+      <button onclick="addOrder('Express')">Add Express 🟡</button>
+      <button onclick="addOrder('Regular')">Add Regular 🟢</button>
+      <button onclick="flashSale()">Flash Sale ⚡</button>
+      <button onclick="processNext()">Process Next ➡️</button>
+      <button id="pauseBtn" onclick="togglePause()">Pause ⏸️</button>
+      <label>Speed: <input type="range" id="speed" min="200" max="2000" value="800" step="200"></label>
+      <span id="queueSize">Queue: 0</span>
+    </div>
+    <div id="queue-container" class="queue"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
