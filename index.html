@@ -16,10 +16,19 @@
       <button onclick="flashSale()">Flash Sale ⚡</button>
       <button onclick="processNext()">Process Next ➡️</button>
       <button id="pauseBtn" onclick="togglePause()">Pause ⏸️</button>
-      <label>Speed: <input type="range" id="speed" min="200" max="2000" value="800" step="200"></label>
+      <button onclick="toggleTheme()">🌙 Dark/Light</button>
+      <div class="speedometer">
+        <div class="speed-arc"></div>
+        <div class="speed-needle" id="needle"></div>
+      </div>
+      <label>Speed: <input type="range" id="speed" min="200" max="2000" value="800" step="200"> <span id="speedVal">800ms</span></label>
       <span id="queueSize">Queue: 0</span>
     </div>
     <div id="queue-container" class="queue"></div>
+    <div class="stats">
+      <span id="processedCount">Processed: 0</span>
+      <span id="waitTime">Avg Wait: 0s</span>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
