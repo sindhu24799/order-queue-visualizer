@@ -73,3 +73,8 @@ label { color: var(--text-primary); font-size: 1.1em; }
   .order-item { width: 70px; height: 70px; font-size: 10px; }
   .stats { flex-direction: column; gap: 10px; }
 }
+.perf-badge {
+  position: fixed; top: 10px; right: 10px; 
+  background: #10b981; color: white; padding: 5px 12px; 
+  border-radius: 20px; font-size: 12px; font-weight: bold;
+}
